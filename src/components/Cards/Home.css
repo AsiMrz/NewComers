@@ -1,0 +1,7 @@
+.home {
+  /* to be displayed just after the header */
+  padding-top: 120px;
+    display: flex;
+    flex-direction: wrap;
+    margin:5px;
+  }

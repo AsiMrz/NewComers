@@ -2,10 +2,10 @@ import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Header from './components/Header/Header';
 import Contact from './components/Contact';
-import Stories from './components/Stories/Stories';
+import Stories from './components/Stories';
 import Landing from './components/Landing/Landing';
-import AboutUs from './components/Landing/AboutUs';
 import 'bootstrap/dist/css/bootstrap.css';
+import './Welcoming.css';
 
 function App() {
   return (
@@ -15,14 +15,13 @@ function App() {
           <Header />
           <Switch>
             <Route path='/contact' component={Contact} />
-            <Route path='/aboutus' component={AboutUs} />
+            <Route path='/aboutus' component={Landing} />
             <Route path='/stories' component={Stories} />
           </Switch>
         </div>
       </BrowserRouter>
       <div>
         <Landing />
-        <Stories />
       </div>
     </div>
   );

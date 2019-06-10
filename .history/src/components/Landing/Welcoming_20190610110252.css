@@ -1,0 +1,42 @@
+card--expand {
+  border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  border: 1px solid #d1cece;
+  -webkit-box-shadow: 11px 10px 21px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 10px 21px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 11px 10px 21px -5px rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+}
+
+card-title--expand {
+  text-align: center;
+  color: rgb(255, 251, 251);
+  background: greenyellow;
+}
+card-container {
+  background-color: aquamarine;
+}
+
+card-social__icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: -2.2rem;
+  margin-top: 9rem;
+}
+avatar {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+card-body-wrapper {
+  margin: 0 auto;
+}
+card-text {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.my-card-img {
+  width: 50%;
+  border-radius: calc(0.6rem - 1px);
+}
