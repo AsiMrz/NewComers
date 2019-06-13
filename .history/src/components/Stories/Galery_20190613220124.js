@@ -103,7 +103,7 @@ const Galery = () => (
         <a style={{cursor: 'pointer'}} onClick={StoryCard}>
           <Col sm-3={{size: 4, offset: 1}}>
             <div className='small-card'>
-              <img className='small-card-img' src={people.photo} />
+              <img style={{center}} src={people.photo} />
               <h2 className='small-card-text'>{people.name}</h2>
               <p className='small-card-text'>from {people.homeCountry}</p>
               <cite className='small-card-text'>Skills:{people.skills}</cite>

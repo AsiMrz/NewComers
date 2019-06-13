@@ -1,7 +1,5 @@
 import React from 'react';
 import {Container, Row, Col, Button} from 'reactstrap';
-import './Stories.css';
-import StoryCard from './StoryCard';
 
 // class Galery extends Component {
 
@@ -17,6 +15,7 @@ import StoryCard from './StoryCard';
 //     summary:"",
 //         },
 //       };
+      
 
 //       this.handleClick = this.handleClick.bind(this);
 //   }
@@ -96,23 +95,22 @@ const people = [
   },
 ];
 
-const Galery = () => (
-  <Container className='my-container'>
+const People = () => (
+  <Container>
     <Row>
       {people.map(people => (
-        <a style={{cursor: 'pointer'}} onClick={StoryCard}>
-          <Col sm-3={{size: 4, offset: 1}}>
-            <div className='small-card'>
-              <img className='small-card-img' src={people.photo} />
-              <h2 className='small-card-text'>{people.name}</h2>
-              <p className='small-card-text'>from {people.homeCountry}</p>
-              <cite className='small-card-text'>Skills:{people.skills}</cite>
-            </div>
-          </Col>
-        </a>
+        <Col sm-3={{size: 4, offset: 1}} href='StoryCard'>
+          <img src={people.photo} />
+          <h2>{people.name}</h2>
+          <p>{people.homeCountry}</p>
+          <cite>{people.skills}</cite>
+          <Button href='StoryCard'>More</Button>
+        </Col>
       ))}
     </Row>
   </Container>
 );
+      }
+    }
 
-export default Galery;
+

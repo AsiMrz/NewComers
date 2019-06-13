@@ -52,7 +52,7 @@ body {
   flex-direction: row;
 }
 .welcoming {
-  margin: 150px 50px 150px 50px;
+  margin: 150 50 100 50;
 }
 welcoming-img {
   max-width: 100px;

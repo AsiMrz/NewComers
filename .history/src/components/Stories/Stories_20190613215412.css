@@ -1,0 +1,13 @@
+.stories-container {
+  max-width: 200;
+  max-height: 200;
+}
+.my-container {
+  max-width: 200;
+  max-height: 200;
+}
+
+.small-card {
+  margin: 20px;
+  box-shadow: ;
+}

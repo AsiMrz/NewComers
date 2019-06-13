@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row, Col, Button} from 'reactstrap';
 import './Stories.css';
-import StoryCard from './StoryCard';
+import StoryCrd from 'StoryCard';
 
 // class Galery extends Component {
 
@@ -103,10 +103,11 @@ const Galery = () => (
         <a style={{cursor: 'pointer'}} onClick={StoryCard}>
           <Col sm-3={{size: 4, offset: 1}}>
             <div className='small-card'>
-              <img className='small-card-img' src={people.photo} />
-              <h2 className='small-card-text'>{people.name}</h2>
-              <p className='small-card-text'>from {people.homeCountry}</p>
-              <cite className='small-card-text'>Skills:{people.skills}</cite>
+              <img src={people.photo} />
+              <h2>{people.name}</h2>
+              <p>from {people.homeCountry}</p>
+              <cite>Skills:{people.skills}</cite>
+              <Button href='StoryCard'>More</Button>
             </div>
           </Col>
         </a>

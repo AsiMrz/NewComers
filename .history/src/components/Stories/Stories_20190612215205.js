@@ -7,9 +7,7 @@ export default class Stories extends Component {
   render() {
     return (
       <div className='stories-container'>
-        <Button color='info' size='lg' href='StoryForm'>
-          Share your story
-        </Button>
+        <Button href='StoryForm'>Share your story</Button>
         <Galery />
       </div>
     );
